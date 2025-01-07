@@ -1,0 +1,278 @@
+/* Header container styling */
+.header {
+    background-color: #dc1010; /* Dark background for header */
+    /* padding: 10px; */
+}
+
+/* Flexbox for aligning header content horizontally */
+header {
+    display: flex;
+    justify-content: space-between; /* Spread elements out */
+    align-items: center; /* Vertically align items */
+}
+
+/* Logo styling */
+.logo {
+    height: 100px; /* Adjust logo size */
+    width: auto;
+}
+
+/* Styling for the search container */
+.search-container {
+    display: flex;
+    align-items:center;
+}
+
+/* Search input styling */
+.search-input {
+    width: 500px;
+    padding: 8px 15px;
+    font-size: 16px;
+    border: 1px solid #d4d4d4;
+    border-radius: 25px;
+    background-color: #f9f9f9;
+    color: white;
+    margin-right: 10px;
+    outline: none;
+   
+}
+
+/* Search button styling */
+.search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-button i {
+    color: black;
+    font-size: 18px;
+}
+
+/* Styling for the navigation list (icons) */
+/* nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px; 
+}
+
+nav ul li {
+    display: inline;
+    cursor: pointer;
+}
+
+nav ul li i {
+    color: black;
+    font-size: 20px;
+}
+
+nav ul li:hover i {
+    color: #9B001F; 
+}
+
+h1 {
+    color: black;
+    padding-left: 15px;
+}
+
+ */
+ .icons{
+    display: flex;
+   gap: 50px;
+ }
+
+/* Style for the horizontal scrolling container */
+.scrolling-container {
+    display: flex;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    padding: 10px;
+    gap: 20px; /* Space between items */
+    margin-top: 20px;
+}
+
+/* Custom Webkit scrollbar for modern look */
+.scrolling-container::-webkit-scrollbar {
+    height: 8px; /* Reduces the height of the scrollbar */
+}
+
+/* Style for each scroll item (image + text) */
+.scroll-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 150px; /* Ensures each item has enough width */
+}
+
+/* Circular image styling with shadow */
+.circular-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fits within the circle */
+    margin-bottom: 10px; /* Space between image and text */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Text styling */
+.scroll-item p {
+    color: black;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Hover effect on image */
+.scroll-item:hover .circular-image {
+    transform: scale(1.1); /* Slightly enlarges the image */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow effect on hover */
+}
+
+/* Optional hover effect for the entire scroll item */
+.scroll-item:hover {
+    transform: scale(1.05); /* Slightly enlarges the whole item */
+    transition: transform 0.3s ease;
+}
+
+/* Header container styling */
+.header {
+    background-color: #fefefe; /* Dark background for header */
+    /* padding: 10px; */
+}
+
+/* Flexbox for aligning header content horizontally */
+header {
+    display: flex;
+    justify-content: space-between; /* Spread elements out */
+    align-items: center; /* Vertically align items */
+}
+
+/* Logo styling */
+.logo {
+    height: 100px; /* Adjust logo size */
+    width: auto;
+}
+
+/* Styling for the search container */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Search input styling */
+.search-input {
+    width: 500px;
+    padding: 8px 15px;
+    font-size: 16px;
+    border: 1px solid #d4d4d4;
+    border-radius: 25px;
+    background-color: #f9f9f9;
+    color: white;
+    margin-right: 10px;
+    outline: none;
+}
+
+/* Search button styling */
+.search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-button i {
+    color: black;
+    font-size: 18px;
+}
+
+/* Styling for the navigation list (icons) */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px; /* Space between icons */
+}
+
+nav ul li {
+    display: inline;
+    cursor: pointer;
+}
+
+nav ul li i {
+    color: black;
+    font-size: 20px;
+}
+
+nav ul li:hover i {
+    color: #9B001F; /* Change icon color on hover */
+}
+
+h1 {
+    color: black;
+    padding-left: 15px;
+}
+
+/* Container for the grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Creates responsive columns */
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+}
+
+/* Grid item (image + info) */
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    border-radius: 15px; /* Rounded corners for the grid items */
+    overflow: hidden;
+    backdrop-filter: blur(10px); /* Glassy effect: blur the background */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for grid items */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease; /* Smooth transitions */
+}
+
+/* Square image styling */
+.square-image {
+    width: 100%;
+    height: 200px; /* Square shape with a fixed height */
+    object-fit: cover; /* Ensures the image covers the entire square */
+    transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+}
+
+/* Styling for the info below the image */
+.item-info {
+    padding: 10px;
+    text-align: center;
+    color: black; /* White text for readability */
+}
+
+/* Item name styling */
+.item-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Item price styling */
+.item-price {
+    font-size: 14px;
+    color: black; /* Red color for price */
+    margin-bottom: 5px;
+}
+
+/* Item rating styling */
+.item-rating {
+    font-size: 14px;
+    color: #ff9900; /* Yellow color for rating */
+}
+
+/* Hover effects */
+.grid-item:hover {
+    transform: scale(1.02); /* Slightly enlarges the item on hover */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Enhances shadow on hover */
+    backdrop-filter: blur(1px); /* More blur on hover to enhance glassy effect */
+}
+
+/* Hover effect on image */
+.square-image:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}

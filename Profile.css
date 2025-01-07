@@ -1,0 +1,79 @@
+/* Container for the profile page */
+.pcontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fefefe;
+}
+
+/* Header container styling */
+.pheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+
+.pheader {
+    display: flex; /* Enable flexbox for icons */
+    justify-content: flex-end; /* Push icons to the right */
+    
+}
+
+.pheader div {
+    display: flex;
+    align-items: center; /* Vertically center the icons */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+svg {
+    fill: white; /* Ensure icons are visible */
+    width: 24px;
+    height: 24px;
+}
+
+
+
+/* Profile card content */
+.ptext {
+    padding: 20px;
+}
+
+.form1 label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form1 input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.fbutton, .orderhistory {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff9900;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.fbutton:hover, .orderhistory:hover {
+    background-color: #e68a00;
+}
